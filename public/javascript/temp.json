@@ -1,0 +1,21 @@
+[
+    
+    [
+        {"nomeTitolare":"mu","numeroPatente":"mu","categoria":"mu","dataRilascio":"mu","dataScadenza":"mu"},
+        {"nomeTitolare":"mu","numeroPatente":"mu","categoria":"mu","dataRilascio":"mu","dataScadenza":"mu"},
+        {"nomeTitolare":"mu","numeroPatente":"mu","categoria":"mu","dataRilascio":"mu","dataScadenza":"mu"},
+        {"nomeTitolare":"mu","numeroPatente":"mu","categoria":"mu","dataRilascio":"mu","dataScadenza":"mu"}
+    ],
+    [
+        {"targa":"mu","libretto":"mu","annoImmatricolazione":"mu","marca":"mu","modello":"mu","assic":"mu","scadAss":"mu","scadBollo":"mu","scadRevisione":"mu","ultimoCambioPneumatici":"mu","ultimoTagliando":"mu"},
+        {"targa":"mu","libretto":"mu","annoImmatricolazione":"mu","marca":"mu","modello":"mu","assic":"mu","scadAss":"mu","scadBollo":"mu","scadRevisione":"mu","ultimoCambioPneumatici":"mu","ultimoTagliando":"mu"},
+        {"targa":"mu","libretto":"mu","annoImmatricolazione":"mu","marca":"mu","modello":"mu","assic":"mu","scadAss":"mu","scadBollo":"mu","scadRevisione":"mu","ultimoCambioPneumatici":"mu","ultimoTagliando":"mu"},
+        {"targa":"mu","libretto":"mu","annoImmatricolazione":"mu","marca":"mu","modello":"mu","assic":"mu","scadAss":"mu","scadBollo":"mu","scadRevisione":"mu","ultimoCambioPneumatici":"mu","ultimoTagliando":"mu"}
+    ],
+    [
+        {"targa":"mu","data":"mu","tipo":"mu","spesa":"mu","chilometri":"mu"},
+        {"targa":"mu","data":"mu","tipo":"mu","spesa":"mu","chilometri":"mu"},
+        {"targa":"mu","data":"mu","tipo":"mu","spesa":"mu","chilometri":"mu"},
+        {"targa":"mu","data":"mu","tipo":"mu","spesa":"mu","chilometri":"mu"}
+    ]
+]

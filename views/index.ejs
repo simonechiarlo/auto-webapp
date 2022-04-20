@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+  <script defer src="javascript/index.js"></script>
+  <script defer src="javascript/indexProve.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+  <nav>
+    <h3>Gestione</h3>
+    <!-- solo per le operazioni di tipo post serve aggiungere una label etc-->
+    <div onclick="sendData()" id="imageSalva">
+      <img src="images/png/save.png" >   <!--l'idea è cambiare tra circular-shape-silhouette.png e questa quando salva -->
+      
+    </div>
+
+    <div onclick="provaNotifica()">
+      <!-- saranno da fare un icona con pallino e una senza, per semplicità-->
+        <img id="campanella" src="images/png/bell.png">  
+    </div>
+    <!-- bottone di Log out-->
+    <div>
+      <form action="/logout?_method=DELETE" method="POST">
+        <label for="logOut">
+          <img src="images/png/sign-out-option.png">
+        </label>
+        <button type="submit" id="logOut">Log Out</button>
+      </form>
+    </div>
+  </nav>
+
+  <div class="tab">
+    <div class="tablinks" onclick="goto(event, 'patenti')"><p>Patenti</p></div>
+    <div class="tablinks" onclick="goto(event, 'vetture')"><p>Vetture</p></div>
+    <div class="tablinks" onclick="goto(event, 'manutenzioni')"><p>Manutenzioni</p></div>
+  </div>
+  
+  <!--contenuti: -->
+  <div id="patenti" class="tabcontent">
+    <div class="content" id="contentPatenti">
+
+      <!-- questi saranno aggiunti dinamicamente-->
+      <div class="side" id="sidePatenti">
+        
+      </div>
+
+      <div class="edit" id="editPatenti">
+        <h1 class="title">CENTRATO</h1> 
+      </div>
+
+
+    </div>
+  </div>
+
+  <div id="vetture" class="tabcontent">
+    <div class="content" id="contentVetture">
+
+      <div class="side" id="sideVetture">
+        
+      </div>
+
+      <div class="edit" id="editVetture">
+        <h1 class="title">CENTRATO</h1> 
+      </div>
+
+
+    </div>
+  </div>
+  
+  <div id="manutenzioni" class="tabcontent">
+    <div class="content" id="contentManutenzioni">
+
+      <div class="side" id="sideManutenzioni">
+        
+      </div>
+
+      <div class="edit" id="editManutenzioni">
+        <h1 class="title">CENTRATO</h1> 
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+
+  <!--
+
+    <div class="loading-pan">
+      <div class="riga">
+        <p>Patenti</p>
+        
+        <label for="inpPatenti">
+          <img src="images/png/upload.png">
+      </label>
+      <label for="inpPatenti">
+        <img src="images/png/download.png">
+      </label>
+    </div>
+    
+    <div class="riga">
+      <p>Vetture</p>
+      <label for="inpVetture">
+        <img src="images/png/upload.png">
+      </label>
+      <label for="inpVetture">
+        <img src="images/png/download.png">
+      </label>
+    </div>
+    
+    <div class="riga">
+      <p>Manutenzioni</p>
+      <label for="inpManutenzioni">
+        <img src="images/png/upload.png">
+      </label>
+      <label for="inpManutenzioni">
+        <img src="images/png/download.png">
+      </label>
+    </div>
+    
+    
+    
+    
+
+    <input type="file" id="inpPatenti" onchange="load(patenti,this)" accept=".csv">
+    <input type="file" id="inpVetture" onchange="load(vetture,this)" accept=".json">
+    <input type="file" id="inpManutenzioni" onchange="load(manutenzioni,this)" accept=".csv">
+  -->
+  </div>
+
+</body>
+</html>
